@@ -288,3 +288,38 @@ Services:
 ## 11. Conclusion
 
 This system models **real police workflows**, focusing on planning, execution, monitoring, and auditability rather than just CRUD features. The design prioritizes scalability, clarity, and real-time visibility.
+
+
+com.copmap
+ ├── CopMapApplication.java
+ ├── config
+ │    ├── SecurityConfig.java
+ │    ├── RedisConfig.java
+ │    └── WebSocketConfig.java
+ ├── auth
+ │    ├── AuthController.java
+ │    ├── AuthService.java
+ │    └── JwtUtil.java
+ ├── user
+ │    ├── User.java
+ │    ├── Role.java
+ │    ├── UserRepository.java
+ │    └── UserService.java
+ ├── patrol
+ │    ├── Patrol.java
+ │    ├── PatrolController.java
+ │    ├── PatrolService.java
+ │    └── PatrolRepository.java
+ ├── assignment
+ │    ├── Assignment.java
+ │    └── AssignmentRepository.java
+ ├── tracking
+ │    ├── OfficerLocation.java
+ │    ├── TrackingController.java
+ │    └── TrackingService.java
+ ├── notification
+ │    └── AlertService.java
+ └── common
+      ├── ApiResponse.java
+      └── BaseEntity.java
+
